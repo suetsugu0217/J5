@@ -4,12 +4,9 @@ abstract class Board {
 
 	static char board [][] = new char[3][3];
 	
-	public Board() {
-		
-	}
-	
 	abstract void put();
 	
+	//盤面を〇で埋める
 	static void clear() {
 		for(int i = 0; i < 3; i++) {
 			for(int j = 0; j < 3; j++) {
@@ -18,6 +15,7 @@ abstract class Board {
 		}
 	}
 	
+	//盤面を表示する
 	static void print() {
 		for(int i = 0; i < 3; i++) {
 			for(int j = 0; j < 3; j++) {

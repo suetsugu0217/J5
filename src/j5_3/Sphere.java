@@ -6,7 +6,8 @@ public class Sphere extends Circle {
 	}
 	
 	public double getVol() {
-		return (4/3)*Math.PI*Math.pow(radius, 3);
+		//4/3は1になってしまうため注意
+		return (4.0/3.0)*Math.PI*Math.pow(radius, 3);
 	}
 
 }
